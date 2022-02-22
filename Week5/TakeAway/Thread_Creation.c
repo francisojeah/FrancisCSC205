@@ -6,12 +6,12 @@ for(int i = 0; i < 5; i++){
  printf("I am a Custom Thread Function Created By Programmer.\n");
  sleep(1);
 if(i == 3){
- printf("My JOB is Done. I am now being terminated by programmer.
-\n");
+ printf("My JOB is Done. I am now being terminated by programmer.\n");
  pthread_exit(NULL);
  }
  }
-return NULL; }
+return NULL; 
+}
 int main(){
  pthread_t thread; // Thread Descriptor
  pthread_create(&thread, NULL, customThreadFunction, NULL);
